@@ -24,5 +24,5 @@ The assistant will prompt you for input, and you can type in any message. Once y
 
 To exit the conversation, type __"exit"__ and hit enter.
 
-Enhancements
+# Enhancements
 This chat assistant can be enhanced by adding more functionality, such as handling user input errors, adding more logging details, and improving the formatting of the console output.
