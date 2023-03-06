@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set up logging configuration
-logging.basicConfig(filename='conversation.log', level=logging.INFO,
+logging.basicConfig(filename='log/conversation.log', level=logging.INFO,
                     format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
 
 # Set the TERM environment variable to xterm
@@ -21,7 +21,7 @@ os.environ["TERM"] = "xterm"
 
 # Initialize OpenAI client
 openai.api_key = os.getenv('OPENAI_API_KEY')
-print(os.environ.get('OPENAI_API_KEY'))
+
 # Define conversation log
 conversation_log = []
 
