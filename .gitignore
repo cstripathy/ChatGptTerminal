@@ -2,3 +2,6 @@
 /venv
 /.idea
 /log/*
+!/log/.gitkeep
+/__pycache__/
+conversation_log.json
