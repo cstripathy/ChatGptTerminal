@@ -1,23 +1,26 @@
 # AI Chat Assistant
-This is a simple AI chat assistant that interacts with users using **OpenAI's GPT-3 API**. The assistant takes user input, sends it to the API and returns a response. The conversation is logged and can be viewed later.
+This project contains a terminal based chat assistant powered by **OpenAI's GPT-3 API**.  It accepts user input, forwards it to the API and displays the response.  Conversations are persisted so you can review them later.
 
 ## Requirements
 - Python 3.6+
 - OpenAI API key
 ## Setup
-Clone this repository to your local machine.
-Install the required packages by running `pip install -r requirements.txt`.
-Set your OpenAI API key in a `config.py` file or in your environment variables as `OPENAI_API_KEY`.
-## Dependencies
-This project requires the following dependencies:
-
-- openai
-- pygments
-- rich
-## Usage
-To start a conversation with the chat assistant, run `python chat.py` in your terminal.
+Clone this repository to your local machine and install the dependencies with:
+```bash
+pip install -r requirements.txt
 ```
-python chat.py
+Set your OpenAI API key in a `config.py` file or export it as the environment variable `OPENAI_API_KEY`.
+## Dependencies
+This project requires the following dependencies which are listed in `requirements.txt`:
+
+- `openai`
+- `pygments`
+- `rich`
+- `python-dotenv`
+## Usage
+Start a conversation by running `python main.py` from the project root.  The assistant uses an asynchronous workflow so responses are non-blocking while waiting for the API.
+```
+python main.py
 ```
 
 The assistant will prompt you for input, and you can type in any message. Once you hit enter, the assistant will send your message to the __OpenAI API__ and return a response. The conversation is logged and stored in `conversation_log.json`.
